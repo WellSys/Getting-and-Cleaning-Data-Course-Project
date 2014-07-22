@@ -351,7 +351,33 @@ Train Data
         
         ```
 
- 5. Creating the data set on disc.
+ 5. Results
+ 
+ The columns across the resulting data structure are as follows:
+ 
+        Column Name                             Column Number           Source
+        
+        Activity Number                         1                       y_test/train
+        Activity Name                           2                       activity_labels assigned based on Activity Number
+        Subject Number                          3                       subjects_test/train
+        Means of 561 feature columns            4 - 564                 x_test/train
+        Means of Body Acceleration x-Axis       565 - 692               body_acc_x_test/train
+        Means of Body Acceleration y-Axis       693 - 820               body_acc_y_test/train
+        Means of Body Acceleration z-Axis       821 - 948               body_acc_z_test/train
+        Means of Body Gyroscopic x-Axis         949 - 1076              body_gyro_x_test/train
+        Means of Body Gyroscopic y-Axis         1077 - 1204             body_gyro_y_test/train
+        Means of Body Gyroscopic z-Axis         1205 - 1332             body_gyro_z_test/train
+        Means of Total Acceleration x-Axis      1333 - 1460             total_acc_x_test/train
+        Means of Total Acceleration y-Axis      1461 - 1588             total_acc_y_test/train
+        Means of Total Acceleration z-Axis      1589 - 1716             total_acc_z_test/train
+        
+        The row counts are as follows: 30 subjects and six actvities produce rows for 180 unique combinations
+        of activities and subjects.
+        
+        Total dimensions of second independent tidy data set of mean variables by activity and subject 180 rows 
+        and 1,716 columns.
+
+ 6. Creating the data set on disc.
 
  This was straighforward. Note that, because there were commas in the column names provided in the .zip file,
  we used the semicolon ";" as a separator so we could parse the file into Excel and manually verify our averages.

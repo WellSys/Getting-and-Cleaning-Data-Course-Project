@@ -29,7 +29,7 @@ total_acc_x_test <- read.table("total_acc_x_test.txt")
 total_acc_y_test <- read.table("total_acc_y_test.txt")
 total_acc_z_test <- read.table("total_acc_z_test.txt")
 
-# Using the test fiels as a template, build column names for body & total common to test & train files
+# Using the test fields as a template, build column names for body & total common to test & train files
 
 body_acc_x_col_names <- ""
 for (i in 1:ncol(body_acc_x_test)) {

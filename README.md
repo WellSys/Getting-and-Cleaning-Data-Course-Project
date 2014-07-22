@@ -32,12 +32,12 @@ Inventory of data required and how it is used:
 Data Shared by Test and Train
 --------------------------------------------------------------------------------------------------------------------------
  
-
-   Memory Variable         Source File             Data Description
-
-   activity_labels         activity_labels.txt     Names of activities, to be looked up based on activity numbers in the y_test.txt file
-
-   col_names_561           features.txt            Feature names related to the columns of the x_test data
+        
+        Memory Variable         Source File             Data Description
+        
+        activity_labels         activity_labels.txt     Names of activities, to be looked up based on activity numbers in the y_test.txt file
+        
+        col_names_561           features.txt            Feature names related to the columns of the x_test data
                                                    This file lists feature names down its first column, and these names 
                                                    must be used horizontally across the x_test.txt and x_train.txt data, 
                                                    below, as column names.
@@ -45,78 +45,78 @@ Data Shared by Test and Train
 Test Data 
 --------------------------------------------------------------------------------------------------------------------------
 
- Memory Variable         Source File             Data Description
-
- subjects_test           subject_test.txt        Identifier numbers of subjects (people) related to rows of test data
-                                                 One row for each row of feature data from x_test.txt
-                                                 Add to feature data by cbind
- 
- activities_test         y_test.txt              Identifier numbers of actvities related to rows of test data
-                                                 One row for each row of feature data from x_test.txt
-                                                 Add to feature data by cbind
-                                                 These numbers are used to look up activity names that are 
-                                                 in the variable called activity_labels which comes from activity_labels.txt
- 
- feature_data_test       x_test.txt              561-column-wide test data described in the features.txt file
-                                                 These are the data that go in the columns named in col_names_561, above,
-                                                 and are the results of analysis on the observation vectors in the body_ and 
-                                                 total_ files below.
- 
- The following files have no metadata and no descriptions for the variables in them, and are reputed to
- contain data inferred from windowing actual instrumentation output from the phone.
-
- These are added by cbind to the test features data
-
- Column headings for these must be the same as the column headings for their corresponding _train versions, or
- we will not be able to rbind test and train data.
-
- body_acc_x_test         body_acc_x_test.txt     Body acceleration x-axis data related to rows of test data
- body_acc_y_test         body_acc_y_test.txt     Body acceleration y-axis data related to rows of test data
- body_acc_z_test         body_acc_z_test.txt     Body acceleration z-axis data related to rows of test data
- body_gyro_x_test        body_gyro_x_test.txt    Body gyroscopic x-axis data related to rows of test data
- body_gyro_y_test        body_gyro_y_test.txt    Body gyroscopic y-axis data related to rows of test data
- body_gyro_z_test        body_gyro_z_test.txt    Body gyroscopic z-axis data related to rows of test data
- total_acc_x_test        total_acc_x_test.txt    Total acceleration x-axis data related to rows of test data
- total_acc_y_test        total_acc_y_test.txt    Total acceleration y-axis data related to rows of test data 
- total_acc_z_test        total_acc_z_test.txt    Total acceleration z-axis data related to rows of test data
+         Memory Variable         Source File             Data Description
+        
+         subjects_test           subject_test.txt        Identifier numbers of subjects (people) related to rows of test data
+                                                         One row for each row of feature data from x_test.txt
+                                                         Add to feature data by cbind
+         
+         activities_test         y_test.txt              Identifier numbers of actvities related to rows of test data
+                                                         One row for each row of feature data from x_test.txt
+                                                         Add to feature data by cbind
+                                                         These numbers are used to look up activity names that are 
+                                                         in the variable called activity_labels which comes from activity_labels.txt
+         
+         feature_data_test       x_test.txt              561-column-wide test data described in the features.txt file
+                                                         These are the data that go in the columns named in col_names_561, above,
+                                                         and are the results of analysis on the observation vectors in the body_ and 
+                                                         total_ files below.
+         
+         The following files have no metadata and no descriptions for the variables in them, and are reputed to
+         contain data inferred from windowing actual instrumentation output from the phone.
+        
+         These are added by cbind to the test features data
+        
+         Column headings for these must be the same as the column headings for their corresponding _train versions, or
+         we will not be able to rbind test and train data.
+        
+         body_acc_x_test         body_acc_x_test.txt     Body acceleration x-axis data related to rows of test data
+         body_acc_y_test         body_acc_y_test.txt     Body acceleration y-axis data related to rows of test data
+         body_acc_z_test         body_acc_z_test.txt     Body acceleration z-axis data related to rows of test data
+         body_gyro_x_test        body_gyro_x_test.txt    Body gyroscopic x-axis data related to rows of test data
+         body_gyro_y_test        body_gyro_y_test.txt    Body gyroscopic y-axis data related to rows of test data
+         body_gyro_z_test        body_gyro_z_test.txt    Body gyroscopic z-axis data related to rows of test data
+         total_acc_x_test        total_acc_x_test.txt    Total acceleration x-axis data related to rows of test data
+         total_acc_y_test        total_acc_y_test.txt    Total acceleration y-axis data related to rows of test data 
+         total_acc_z_test        total_acc_z_test.txt    Total acceleration z-axis data related to rows of test data
 
 Train Data
 --------------------------------------------------------------------------------------------------------------------------
 
- Memory Variable         Source File             Data Description
- 
- subjects_train          subject_train.txt       Identifier numbers of subjects (people) related to rows of train data
-                                                 One row for each row of feature data from x_train.txt
-                                                 Add to feature data by cbind
- 
- activities_train        y_train.txt             Identifier numbers of actvities related to rows of train data
-                                                 One row for each row of feature data from x_train.txt
-                                                 Add to feature data by cbind
-                                                 These numbers are used to look up activity names that are 
-                                                 in the variable called activity_labels which comes from activity_labels.txt
-
- feature_data_train      x_train.txt             561-column-wide train data described in the features.txt file
-                                                 These are the data that go in the columns named in in col_names_561, above,
-                                                 and are the results of analysis on the observation vectors in the body_ and 
-                                                 total_ files below.
- 
- The following files have no metadata and no descriptions for the variables in them, and are reputed to
- contain data inferred from windowing actual instrumentation output from the phone.
- 
- These are added by cbind to the train features data.
- 
- Column names for these must be the same as the column names for their corresponding _test versions, or
- we will not be able to rbind test and train data.
- 
- body_acc_x_train         body_acc_x_train.txt     Body acceleration x-axis data related to rows of train data
- body_acc_y_train         body_acc_y_train.txt     Body acceleration y-axis data related to rows of train data
- body_acc_z_train         body_acc_z_train.txt     Body acceleration z-axis data related to rows of train data
- body_gyro_x_train        body_gyro_x_train.txt    Body gyroscopic x-axis data related to rows of train data
- body_gyro_y_train        body_gyro_y_train.txt    Body gyroscopic y-axis data related to rows of train data
- body_gyro_z_train        body_gyro_z_train.txt    Body gyroscopic z-axis data related to rows of train data
- total_acc_x_train        total_acc_x_train.txt    Total acceleration x-axis data related to rows of train data
- total_acc_y_train        total_acc_y_train.txt    Total acceleration y-axis data related to rows of train data 
- total_acc_z_train        total_acc_z_train.txt    Total acceleration z-axis data related to rows of train data
+         Memory Variable         Source File             Data Description
+         
+         subjects_train          subject_train.txt       Identifier numbers of subjects (people) related to rows of train data
+                                                         One row for each row of feature data from x_train.txt
+                                                         Add to feature data by cbind
+         
+         activities_train        y_train.txt             Identifier numbers of actvities related to rows of train data
+                                                         One row for each row of feature data from x_train.txt
+                                                         Add to feature data by cbind
+                                                         These numbers are used to look up activity names that are 
+                                                         in the variable called activity_labels which comes from activity_labels.txt
+        
+         feature_data_train      x_train.txt             561-column-wide train data described in the features.txt file
+                                                         These are the data that go in the columns named in in col_names_561, above,
+                                                         and are the results of analysis on the observation vectors in the body_ and 
+                                                         total_ files below.
+         
+         The following files have no metadata and no descriptions for the variables in them, and are reputed to
+         contain data inferred from windowing actual instrumentation output from the phone.
+         
+         These are added by cbind to the train features data.
+         
+         Column names for these must be the same as the column names for their corresponding _test versions, or
+         we will not be able to rbind test and train data.
+         
+         body_acc_x_train         body_acc_x_train.txt     Body acceleration x-axis data related to rows of train data
+         body_acc_y_train         body_acc_y_train.txt     Body acceleration y-axis data related to rows of train data
+         body_acc_z_train         body_acc_z_train.txt     Body acceleration z-axis data related to rows of train data
+         body_gyro_x_train        body_gyro_x_train.txt    Body gyroscopic x-axis data related to rows of train data
+         body_gyro_y_train        body_gyro_y_train.txt    Body gyroscopic y-axis data related to rows of train data
+         body_gyro_z_train        body_gyro_z_train.txt    Body gyroscopic z-axis data related to rows of train data
+         total_acc_x_train        total_acc_x_train.txt    Total acceleration x-axis data related to rows of train data
+         total_acc_y_train        total_acc_y_train.txt    Total acceleration y-axis data related to rows of train data 
+         total_acc_z_train        total_acc_z_train.txt    Total acceleration z-axis data related to rows of train data
 
  Process
 ==========================================================================================================================

@@ -86,7 +86,7 @@ Data Shared by Test and Train
 Test Measurement Data
 ---------------------
         
-         The following data are summarized in Measurement Data Summary, below.
+ The following data are summarized in Measurement Data Summary, below.
 
          Source File            Data Description
 
@@ -103,7 +103,7 @@ Test Measurement Data
 Test Analysis Data 
 ------------------
 
-         The following data are summarized in Analysis Data Summary, below.
+ The following data are summarized in Analysis Data Summary, below.
          
          Source File            Data Description
         
@@ -126,7 +126,7 @@ Test Analysis Data
 Train Measurement Data
 ----------------------
 
-         The following data are summarized in Measurement Data Summary, below.
+ The following data are summarized in Measurement Data Summary, below.
 
          Source File            Data Description
 
@@ -143,7 +143,7 @@ Train Measurement Data
 Train Analysis Data
 -------------------
 
-         The following data are summarized in Analysis Data Summary, below.
+ The following data are summarized in Analysis Data Summary, below.
 
          Source File            Data Description
          

@@ -15,7 +15,9 @@ The data for this project come from http://archive.ics.uci.edu/ml/datasets/Human
         Human Activity Recognition Using Smartphones Data Set 
         Download: Data Folder, Data Set Description
         
-        Abstract: Human Activity Recognition database built from the recordings of 30 subjects performing activities of daily living (ADL) while carrying a waist-mounted smartphone with embedded inertial sensors.
+        Abstract: Human Activity Recognition database built from the recordings of 30 subjects performing 
+        activities of daily living (ADL) while carrying a waist-mounted smartphone with embedded inertial 
+        sensors.
         
         Data Set Characteristics:  
          

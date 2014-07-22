@@ -1,9 +1,13 @@
 # Getting and Cleaning Data
 # Course Project
 # run_analysis.R
+# Doug McCaleb
 
 # See README.md for the inventory of data files that must be in the working directory for 
 # this script to run.
+
+# See CodeBook.md for a summary of the manner in which the measurements were collected and
+# modified.
 
 #
 # Merge test and train data sets

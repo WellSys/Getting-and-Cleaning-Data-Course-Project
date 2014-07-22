@@ -35,12 +35,13 @@ Data Shared by Test and Train
         
         Memory Variable         Source File             Data Description
         
-        activity_labels         activity_labels.txt     Names of activities, to be looked up based on activity numbers in the y_test.txt file
+        activity_labels         activity_labels.txt     Names of activities, to be looked up based on activity numbers 
+                                                        in the y_test.txt file
         
         col_names_561           features.txt            Feature names related to the columns of the x_test data
-                                                   This file lists feature names down its first column, and these names 
-                                                   must be used horizontally across the x_test.txt and x_train.txt data, 
-                                                   below, as column names.
+                                                        This file lists feature names down its first column, and these names 
+                                                        must be used horizontally across the x_test.txt and x_train.txt data, 
+                                                        below, as column names.
 
 Test Data 
 --------------------------------------------------------------------------------------------------------------------------
@@ -55,12 +56,13 @@ Test Data
                                                          One row for each row of feature data from x_test.txt
                                                          Add to feature data by cbind
                                                          These numbers are used to look up activity names that are 
-                                                         in the variable called activity_labels which comes from activity_labels.txt
+                                                         in the variable called activity_labels which comes from 
+                                                         activity_labels.txt
          
          feature_data_test       x_test.txt              561-column-wide test data described in the features.txt file
-                                                         These are the data that go in the columns named in col_names_561, above,
-                                                         and are the results of analysis on the observation vectors in the body_ and 
-                                                         total_ files below.
+                                                         These are the data that go in the columns named in col_names_561, 
+                                                         above, and are the results of analysis on the observation vectors 
+                                                         in the body_ and total_ files below.
          
          The following files have no metadata and no descriptions for the variables in them, and are reputed to
          contain data inferred from windowing actual instrumentation output from the phone.
@@ -85,20 +87,21 @@ Train Data
 
          Memory Variable         Source File             Data Description
          
-         subjects_train          subject_train.txt       Identifier numbers of subjects (people) related to rows of train data
-                                                         One row for each row of feature data from x_train.txt
+         subjects_train          subject_train.txt       Identifier numbers of subjects (people) related to rows of train 
+                                                         data. One row for each row of feature data from x_train.txt
                                                          Add to feature data by cbind
          
          activities_train        y_train.txt             Identifier numbers of actvities related to rows of train data
                                                          One row for each row of feature data from x_train.txt
                                                          Add to feature data by cbind
                                                          These numbers are used to look up activity names that are 
-                                                         in the variable called activity_labels which comes from activity_labels.txt
+                                                         in the variable called activity_labels which comes from 
+                                                         activity_labels.txt
         
          feature_data_train      x_train.txt             561-column-wide train data described in the features.txt file
-                                                         These are the data that go in the columns named in in col_names_561, above,
-                                                         and are the results of analysis on the observation vectors in the body_ and 
-                                                         total_ files below.
+                                                         These are the data that go in the columns named in in 
+                                                         col_names_561, above, and are the results of analysis on the 
+                                                         observation vectors in the body_ and total_ files below.
          
          The following files have no metadata and no descriptions for the variables in them, and are reputed to
          contain data inferred from windowing actual instrumentation output from the phone.

@@ -145,23 +145,23 @@ and columns for the feature data (x_test/train).
 3. The test data is merged into a row structure that includes a test/train identifier column, activity number column, activity 
 name column, subject number column, feature columns, and columns for all measurement vectors.  
 
-Here's the vignette of code that accomplishes step 3 of the merge process:
+ Here's the vignette of code that accomplishes step 3 of the merge process:
 
-                 `{r}
-                 test_data <- cbind(Test_or_Train_Test,
-                                    activities_with_names_test, 
-                                    subjects_test, 
-                                    feature_data_test, 
-                                    body_acc_x_test,
-                                    body_acc_y_test,
-                                    body_acc_z_test,
-                                    body_gyro_x_test,
-                                    body_gyro_y_test,
-                                    body_gyro_z_test,
-                                    total_acc_x_test,
-                                    total_acc_y_test,
-                                    total_acc_z_test)
-                 `
+         ```{r}
+         test_data <- cbind(Test_or_Train_Test,
+                            activities_with_names_test, 
+                            subjects_test, 
+                            feature_data_test, 
+                            body_acc_x_test,
+                            body_acc_y_test,
+                            body_acc_z_test,
+                            body_gyro_x_test,
+                            body_gyro_y_test,
+                            body_gyro_z_test,
+                            total_acc_x_test,
+                            total_acc_y_test,
+                            total_acc_z_test)
+         ```
 
 4. The train data is read into memory variables.
 

@@ -246,8 +246,7 @@ Train Data
  In this way, for columns in body_acc_x_test we thus form the column names "Undefined_Body_Acceleration_x_Variable_1" 
  through "Undefined_Body_Acceleration_x_Variable_128", and likewise for all the body_ and total_ windowed measurement data files.
 
-4. How we did the extract of "only the measurements on the mean and standard deviation for each measurement".  
-(Instruction step 2)
+4. How we did the extract of "only the measurements on the mean and standard deviation for each measurement".  (Instruction step 2)
 --------------------------------------------------------------------------------------------------------------------------
 
  To select columns for the extract we built a vector, extracts, to use as a select argument with the subset() function, 
@@ -276,8 +275,7 @@ Train Data
         first_tidy_data_set <- subset(semi_tidy_data_set, select=extracts)
         ```
 
-5. How we created a second, independent tidy data set with the average of each variable for each activity 
-and each subject.  (Instruction step 5)
+5. How we created a second, independent tidy data set with the average of each variable for each activity and each subject.  (Instruction step 5)
 --------------------------------------------------------------------------------------------------------------------------
 
  Interpretation: Our approach to this takes the domain of data as all-inclusive, as there is no restriction in the instruction.

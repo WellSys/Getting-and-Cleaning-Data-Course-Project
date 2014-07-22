@@ -60,4 +60,101 @@ For each record in the dataset it is provided:
 - Its activity label. 
 - An identifier of the subject who carried out the experiment. 
 
-Citation: This overview is by way of Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
+Citation: This overview is by way of the following sources:
+
+Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
+
+Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto. Smartlab - Non Linear Complex Systems Laboratory DITEN - Universit√  degli Studi di Genova, Genoa I-16145, Italy. activityrecognition '@' smartlab.ws www.smartlab.ws
+
+Detailed Data Inventory
+=======================
+
+
+
+Data Shared by Test and Train
+-----------------------------
+ 
+        
+        Source File             Data Description
+        
+        activity_labels.txt     Names of activities, to be looked up based on activity 
+                                numbers in the y_test.txt file
+        
+        features.txt            Feature names related to the columns of the x_test data
+                                This file lists feature names down its first column, and 
+                                these names must be used horizontally across the 
+                                x_test.txt and x_train.txt data, below, as column names.
+
+Test Analysis Data 
+------------------
+
+         Source File            Data Description
+        
+         subject_test.txt       Identifier numbers of subjects (people) related to rows 
+                                of test data
+                                One row for each row of feature data from x_test.txt
+                                Add to feature data by cbind
+         
+         y_test.txt             Identifier numbers of actvities related to rows of test 
+                                data
+                                One row for each row of feature data from x_test.txt
+                                Add to feature data by cbind
+                                These numbers are used to look up activity names that 
+                                are in the variable called activity_labels which comes 
+                                from activity_labels.txt
+         
+         x_test.txt             561-column-wide test data described in Features Summary, 
+                                below 
+                                These are the data that go in the columns named in 
+                                features.txt, above, and are the results of analysis 
+                                on the observation vectors in the body_ and total_ files 
+                                below in Test Measurement Data.
+         
+Test Measurement Data
+---------------------
+         
+         The following data are summarized in Measurements Summary, below.
+        
+         body_acc_x_test.txt    Body acceleration x-axis data related to rows of test data
+         body_acc_y_test.txt    Body acceleration y-axis data related to rows of test data
+         body_acc_z_test.txt    Body acceleration z-axis data related to rows of test data
+         body_gyro_x_test.txt   Body gyroscopic x-axis data related to rows of test data
+         body_gyro_y_test.txt   Body gyroscopic y-axis data related to rows of test data
+         body_gyro_z_test.txt   Body gyroscopic z-axis data related to rows of test data
+         total_acc_x_test.txt   Total acceleration x-axis data related to rows of test data
+         total_acc_y_test.txt   Total acceleration y-axis data related to rows of test data 
+         total_acc_z_test.txt   Total acceleration z-axis data related to rows of test data
+
+Train Data
+----------
+
+         Source File            Data Description
+         
+         subject_train.txt      Identifier numbers of subjects (people) related to rows of 
+                                train data. 
+                                One row for each row of feature data from x_train.txt
+         
+         y_train.txt            Identifier numbers of actvities related to rows of 
+                                train data
+                                One row for each row of feature data from x_train.txt
+                                                                
+         x_train.txt            561-column-wide train data described in features.txt 
+                                These are the data that go in the columns named in in 
+                                features.txt, above, and are the results of analysis 
+                                on the observation vectors in the body_ and total_ 
+                                files below in Train Measurement Data.
+
+Train Measurement Data
+---------------------
+
+         The following data are summarized in Measurements Summary, below.
+         
+         body_acc_x_train.txt   Body acceleration x-axis data related to rows of train data
+         body_acc_y_train.txt   Body acceleration y-axis data related to rows of train data
+         body_acc_z_train.txt   Body acceleration z-axis data related to rows of train data
+         body_gyro_x_train.txt  Body gyroscopic x-axis data related to rows of train data
+         body_gyro_y_train.txt  Body gyroscopic y-axis data related to rows of train data
+         body_gyro_z_train.txt  Body gyroscopic z-axis data related to rows of train data
+         total_acc_x_train.txt  Total acceleration x-axis data related to rows of train data
+         total_acc_y_train.txt  Total acceleration y-axis data related to rows of train data 
+         total_acc_z_train.txt  Total acceleration z-axis data related to rows of train data

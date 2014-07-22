@@ -3,7 +3,6 @@ Getting and Cleaning Data
 Course Project 
 Doug McCaleb
 
-==========================================================================================================================
  Overview
 ==========================================================================================================================
 
@@ -20,7 +19,7 @@ Because there is not any vernacular explanation of the variables, we avoid the r
 fabricate column names beyond the language provided in the features.txt file and readme file, except where we
 are required to derive means, in which case we prepend "Mean" to the affected column names.
 
-==========================================================================================================================
+
  Data 
 ==========================================================================================================================
 
@@ -29,9 +28,9 @@ must be in the working directory in which run_analysis.R is run.
 
 Inventory of data required and how it is used:
 
-==========================================================================================================================
+
         Data Shared by Test and Train
-==========================================================================================================================
+--------------------------------------------------------------------------------------------------------------------------
  
 
 Memory Variable         Source File             Data Description
@@ -43,9 +42,8 @@ col_names_561           features.txt            Feature names related to the col
                                                 must be used horizontally across the x_test.txt and x_train.txt data, 
                                                 below, as column names.
 
-==========================================================================================================================
         Test Data 
-==========================================================================================================================
+--------------------------------------------------------------------------------------------------------------------------
 
 Memory Variable         Source File             Data Description
 
@@ -82,9 +80,8 @@ total_acc_x_test        total_acc_x_test.txt    Total acceleration x-axis data r
 total_acc_y_test        total_acc_y_test.txt    Total acceleration y-axis data related to rows of test data 
 total_acc_z_test        total_acc_z_test.txt    Total acceleration z-axis data related to rows of test data
 
-==========================================================================================================================
         Train Data
-==========================================================================================================================
+--------------------------------------------------------------------------------------------------------------------------
 
 Memory Variable         Source File             Data Description
 
@@ -121,7 +118,6 @@ total_acc_x_train        total_acc_x_train.txt    Total acceleration x-axis data
 total_acc_y_train        total_acc_y_train.txt    Total acceleration y-axis data related to rows of train data 
 total_acc_z_train        total_acc_z_train.txt    Total acceleration z-axis data related to rows of train data
 
-==========================================================================================================================
  Process
 ==========================================================================================================================
 
@@ -138,9 +134,8 @@ All work is accomplished by run_analysis.R, and consists of the following steps 
 5.Creates a second, independent tidy data set with the average of each variable for each activity and each subject. 
   (My step 5)
 
-==========================================================================================================================
         1. Merge Process (Instruction step 1)
-==========================================================================================================================
+--------------------------------------------------------------------------------------------------------------------------
 
 1. The data shared by both test and train data is read into memory variables inventoried above. This includes activity names 
 and columns for the feature data (x_test/train).
@@ -214,14 +209,13 @@ Data Type                               Row Count
 
 Test                                     2,947
 Train                                    7,352
-----------------------------------------------------
+
 Total Row Count                         10,299
 
 Total dimensions of the intial merge of the data in the .zip file is 10,299 rows and 1,718 columns.
 
-==========================================================================================================================
         2.  How we assigned descriptive activity names (Instruction step 3)
-==========================================================================================================================
+--------------------------------------------------------------------------------------------------------------------------
 
 Activity numbers are used to associate activity names, and to name these columns along the way:
 
@@ -232,9 +226,8 @@ activities_with_names_test    <- data.frame(Activity_Number = activities_test$Ac
                                             Activity_Name   = activity_labels[activities_test$Activity_Number,2])
 '''
 
-==========================================================================================================================
         3. Where and how we inferred descriptive variable names (Instruction step 4)
-==========================================================================================================================
+--------------------------------------------------------------------------------------------------------------------------
 
 For feature data column names we use features.txt, as these are as descriptive as possible/necessary given the available 
 information. 
@@ -250,10 +243,9 @@ for (i in 1:ncol(body_acc_x_test)) {
 In this way, for columns in body_acc_x_test we thus form the column names "Undefined_Body_Acceleration_x_Variable_1" 
 through "Undefined_Body_Acceleration_x_Variable_128", and likewise for all the body_ and total_ windowed measurement data files.
 
-==========================================================================================================================
         4. How we did the extract of "only the measurements on the mean and standard deviation for each measurement".  
            (Instruction step 2)
-==========================================================================================================================
+--------------------------------------------------------------------------------------------------------------------------
 
 To select columns for the extract we built a vector, extracts, to use as a select argument with the subset() function, by iterating across the 
 column names of the merged data frame, semi_tidy_data_set, using regular expressions to look for "mean" or "std" in the column name. Where 
@@ -279,10 +271,9 @@ for (i in 1:ncol(semi_tidy_data_set)){
 
 first_tidy_data_set <- subset(semi_tidy_data_set, select=extracts)
 
-==========================================================================================================================
         5. How we created a second, independent tidy data set with the average of each variable for each activity 
            and each subject.  (Instruction step 5)
-==========================================================================================================================
+--------------------------------------------------------------------------------------------------------------------------
 
 Interpretation: Our approach to this takes the domain of data as all-inclusive, as there is no restriction in the instruction.
 Our approach also makes the inferrence that the instruction intends to convey that we strike the mean of each variable 

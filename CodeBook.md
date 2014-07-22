@@ -240,7 +240,7 @@ Summary of Data Merge
 
 Our deliverable requires us to consolidate the data provided into one data set.  We do this by re-combining the data along its normal dimensions, outlined above, so that we have named activities and commensurable variable names across test and train, and so we can associate measurement data with analsyis data in the same observation, or row, of the merged data set. 
 
-Our resulting merged data set has these characteristics:
+Our resulting merged data set, semi_tidy_data_set, has these characteristics:
 
         Column Name                             Column Number           Source
         
@@ -279,7 +279,7 @@ Summary of Extract
 
 For the creation of our extract of columns containing means and standard deviations, we relied on the information in Analysis Data Summary, above, and subsetted the merged data set by selecting those measurement and analysis data columns that contained the string 'mean' or the string 'std'.
 
-This resulted in an extract data set having the following characteristics.
+This resulted in an extract data set, first_tidy_data_set, having the following characteristics.
 
         Column Name                             Column Number           Source
         Observation_Number                      1                       Serial by row

@@ -1,7 +1,8 @@
-README.md
-Getting and Cleaning Data
-Course Project 
-Doug McCaleb
+        README.md
+        =========
+        Getting and Cleaning Data
+        Course Project 
+        Doug McCaleb
 
  Overview
 ==========================================================================================================================

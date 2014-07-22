@@ -171,17 +171,17 @@ is similar to the code shown above, for test data.
 
 6. After consolidating the test data into a single data frame using cbind and, separately, consolidating the train data into a another single data frame using cbind, we consolidate the test data with the train data using rbind. This is quite straightforward:
 
-'''{r}
+```{r}
 semi_semi_tidy_data_set <- rbind(test_data, train_data)
-'''
+```
 
 7. Observation numbers are inferred by serializing the rows and cbinded as the first column.
 
-'''{r}
+```{r}
 Observation_Number <- data.frame(Observation_Number = 1:nrow(semi_semi_tidy_data_set))
 
 semi_tidy_data_set      <- cbind(Observation_Number, semi_semi_tidy_data_set)
-'''
+```
 
 8. Results: The columns across the resulting data structure are as follows:
 
@@ -219,12 +219,12 @@ Total dimensions of the intial merge of the data in the .zip file is 10,299 rows
 
 Activity numbers are used to associate activity names, and to name these columns along the way:
 
-'''{r}
+```{r}
 colnames(activity_labels)     <- c("Activity_Number", "Activity_Name")
 colnames(activities_test)     <- "Activity_Number"
 activities_with_names_test    <- data.frame(Activity_Number = activities_test$Activity_Number,
                                             Activity_Name   = activity_labels[activities_test$Activity_Number,2])
-'''
+```
 
         3. Where and how we inferred descriptive variable names (Instruction step 4)
 --------------------------------------------------------------------------------------------------------------------------
@@ -234,11 +234,11 @@ information.
 
 For column names for the windowed measurement data vectors we infer some vernacular names based on the file names, thus:
 
-'''{r}
+```{r}
 body_acc_x_col_names <- ""
 for (i in 1:ncol(body_acc_x_test)) {
         body_acc_x_col_names[i] <- paste("Undefined_Body_Acceleration_x_Variable_", i, sep = "")
-'''
+```
 
 In this way, for columns in body_acc_x_test we thus form the column names "Undefined_Body_Acceleration_x_Variable_1" 
 through "Undefined_Body_Acceleration_x_Variable_128", and likewise for all the body_ and total_ windowed measurement data files.
@@ -253,7 +253,7 @@ we found "mean" or "std" in the column name, the column name was appended to the
 
 We then subsetted the merged data set using this vector as the select argument to produce the first tidy data set.
 
-'''{r}
+```{r}
 extracts <- names(semi_tidy_data_set)[1:5]
 extracts_index <- 5
 for (i in 1:ncol(semi_tidy_data_set)){
@@ -287,19 +287,19 @@ This vignette of code gives us the basic data structure and the arithmetic means
 domain of data, we use the final merged data frame (semi_tidy_data_set), and not the extract data frame (first_tidy_data_set) 
 from our Step 4/Instruction step 2, as the extract data frame does not include all variables and the merge data frame does.
 
-'''{r}
+```{r}
 semi_second_independent_tidy_data_set <- aggregate(x = semi_tidy_data_set[, 6:ncol(semi_tidy_data_set)], 
                                                    by = list(semi_tidy_data_set$Activity_Number, semi_tidy_data_set$Subject), 
                                                    FUN = "mean", 
                                                    na.rm = T)
 
-'''
+```
 
 2.  In the course of this, the aggregate function affects column names, and we had to redress this for the final version.
 
 Here we restore column names lost in the aggregate() call and produce the second_independent_tidy_data_set.
 
-'''{r}
+```{r}
 # Fix up column names resulting from aggregation
 
 colnames(semi_second_independent_tidy_data_set)[1] <- "Activity_Number"
@@ -315,7 +315,7 @@ second_activity_names <- data.frame(Activity_Number = semi_second_independent_ti
 second_independent_tidy_data_set <- cbind(second_activity_names,
                                           semi_second_independent_tidy_data_set[ , 2:ncol(semi_second_independent_tidy_data_set)])
 
-'''
+```
 
 4. In line with course project Instruction step 4 to use descriptive variable names, here we revise the 
 column names in the second_independent_tidy_data_set for descriptive accuracy by adding the word "Mean" 
@@ -325,7 +325,7 @@ Again, we do this by iterating across the column names for the averaged variable
 prepending "Mean" to each column name, and appending each new column name to a vector we'll use with
 colnames(second_independent_tidy_data_set) to rename the columns.
 
-'''{r}
+```{r}
 # Revise column names for each variable to reflect that these are now means of the original variables
 
 mean_names <- ""
@@ -337,14 +337,14 @@ for (colname in names(second_independent_tidy_data_set)[4:ncol(second_independen
 
 colnames(second_independent_tidy_data_set)[4:ncol(second_independent_tidy_data_set)] <- mean_names
 
-'''
+```
 
 4. Creating the data set on disc.
 
 This was straighforward. Note that, because there were commas in the column names provided in the .zip file,
 we used the semicolon ";" as a separator so we could parse the file into Excel and manually verify our averages.
 
-'''{r}
+```{r}
 
 write.table(second_independent_tidy_data_set, 
             file = "c:/workspace/second_independent_tidy_data_set.txt", 
@@ -358,6 +358,6 @@ write.table(second_independent_tidy_data_set,
             col.names = TRUE, 
             qmethod = c("escape", "double"))
 
-'''            
+```            
 
 

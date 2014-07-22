@@ -270,6 +270,9 @@ Our resulting merged data set has these characteristics:
         Total Row Count                         10,299
         
         Total dimensions of the intial merge of the data in the .zip file is 10,299 rows and 1,718 columns.
+                
+        This data structure is in semi_tidy_data_set in run_analsyis.R, and run_analysis.R writes semi_tidy_data_set.txt
+        to disc.
         
 Summary of Extract
 ==================
@@ -374,6 +377,9 @@ This resulted in an extract data set having the following characteristics.
         Total Row Count                         10,299
         
         Total dimensions of the extract of means and standard deviations is 10,299 rows and 84 columns.
+        
+        This data structure is in first_tidy_data_set in run_analsyis.R, and run_analysis.R writes first_tidy_data_set.txt
+        to disc.
         
 Summary of Deliverable
 ======================

@@ -383,8 +383,8 @@ Train Data
         The row counts are as follows: 30 subjects and six actvities produce rows for 180 unique combinations
         of activities and subjects.
         
-        Total dimensions of second independent tidy data set of mean variables by activity and subject 180 rows 
-        and 1,716 columns.
+        The total dimensions of the second independent tidy data set of mean variables by activity and subject
+        are 180 rows and 1,716 columns.
 
  6. Creating the data set on disc.
 

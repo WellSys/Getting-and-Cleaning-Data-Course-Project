@@ -284,12 +284,12 @@ This resulted in an extract data set having the following characteristics.
         Activity_Number	                        3                       y_test/train
         Activity_Name	                        4                       activity_labels assigned based on Activity Number
         Subject	                                5                       subjects_test/train
-        tBodyAcc-mean()-X               	        6                       x_test/train
-        tBodyAcc-mean()-Y	                        7                       x_test/train
-        tBodyAcc-mean()-Z	                        8                       x_test/train
-        tBodyAcc-std()-X	                        9                       x_test/train
-        tBodyAcc-std()-Y	                        10                      x_test/train
-        tBodyAcc-std()-Z	                        11                      x_test/train
+        tBodyAcc-mean()-X               	6                       x_test/train
+        tBodyAcc-mean()-Y	                7                       x_test/train
+        tBodyAcc-mean()-Z	                8                       x_test/train
+        tBodyAcc-std()-X	                9                       x_test/train
+        tBodyAcc-std()-Y	                10                      x_test/train
+        tBodyAcc-std()-Z	                11                      x_test/train
         tGravityAcc-mean()-X	                12                      x_test/train
         tGravityAcc-mean()-Y	                13                      x_test/train
         tGravityAcc-mean()-Z	                14                      x_test/train

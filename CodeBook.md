@@ -69,8 +69,6 @@ Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto. Smartlab - No
 Detailed Data Inventory
 =======================
 
-
-
 Data Shared by Test and Train
 -----------------------------
  
@@ -100,7 +98,7 @@ Test Analysis Data
                                 are in the variable called activity_labels which comes 
                                 from activity_labels.txt
          
-         x_test.txt             561-column-wide test data described in Features Summary, below 
+         x_test.txt             561-column-wide test data described in Analysis Data Summary, below 
                                 These are the data that go in the columns named in 
                                 features.txt, above, and are the results of analysis 
                                 on the observation vectors in the body_ and total_ files 
@@ -108,8 +106,8 @@ Test Analysis Data
          
 Test Measurement Data
 ---------------------
-         
-         The following data are summarized in Measurements Summary, below.
+        
+         The following data are summarized in Measurement Data Summary, below.
         
          body_acc_x_test.txt    Body acceleration x-axis data related to rows of test data
          body_acc_y_test.txt    Body acceleration y-axis data related to rows of test data
@@ -132,8 +130,8 @@ Train Data
          y_train.txt            Identifier numbers of actvities related to rows of train data
                                 One row for each row of feature data from x_train.txt
                                                                 
-         x_train.txt            561-column-wide train data described in features.txt 
-                                These are the data that go in the columns named in in 
+         x_train.txt            561-column-wide train data described in Analysis Data Summary, below 
+                                These are the data that go in the columns named in 
                                 features.txt, above, and are the results of analysis 
                                 on the observation vectors in the body_ and total_ 
                                 files below in Train Measurement Data.
@@ -141,7 +139,7 @@ Train Data
 Train Measurement Data
 ---------------------
 
-         The following data are summarized in Measurements Summary, below.
+         The following data are summarized in Measurement Data Summary, below.
          
          body_acc_x_train.txt   Body acceleration x-axis data related to rows of train data
          body_acc_y_train.txt   Body acceleration y-axis data related to rows of train data
@@ -152,3 +150,11 @@ Train Measurement Data
          total_acc_x_train.txt  Total acceleration x-axis data related to rows of train data
          total_acc_y_train.txt  Total acceleration y-axis data related to rows of train data 
          total_acc_z_train.txt  Total acceleration z-axis data related to rows of train data
+         
+Measurement Data Summary
+========================
+
+
+
+Analysis Data Summary
+=====================

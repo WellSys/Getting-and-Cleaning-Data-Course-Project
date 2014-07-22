@@ -270,8 +270,7 @@ Our resulting merged data set, semi_tidy_data_set, has these characteristics:
         
         Total dimensions of the intial merge of the data in the .zip file is 10,299 rows and 1,718 columns.
                 
-        This data structure is in semi_tidy_data_set in run_analsyis.R, and run_analysis.R writes semi_tidy_data_set.txt
-        to disc.
+ This data structure is in semi_tidy_data_set in run_analsyis.R, and run_analysis.R writes semi_tidy_data_set.txt to disc.
         
 Summary of Extract
 ==================
@@ -377,8 +376,7 @@ This resulted in an extract data set, first_tidy_data_set, having the following 
         
         Total dimensions of the extract of means and standard deviations is 10,299 rows and 84 columns.
         
-        This data structure is in first_tidy_data_set in run_analsyis.R, and run_analysis.R writes first_tidy_data_set.txt
-        to disc.
+This data structure is in first_tidy_data_set in run_analsyis.R, and run_analysis.R writes first_tidy_data_set.txt to disc.
         
 Summary of Deliverable
 ======================
@@ -417,3 +415,4 @@ Summary of Deliverable
         The total dimensions of the second independent tidy data set of mean variables by activity and subject
         are 180 rows and 1,716 columns.
 
+ This data structure is in second_independent_tidy_data_set in run_analsyis.R, and run_analysis.R writes second_independent_tidy_data_set.txt to disc.

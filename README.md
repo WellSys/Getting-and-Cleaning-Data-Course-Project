@@ -319,10 +319,12 @@ Train Data
          
           ```{r}
         
-          second_activity_names <- data.frame(Activity_Number = semi_second_independent_tidy_data_set$Activity_Number,
+          second_activity_names <- data.frame(
+                                Activity_Number = semi_second_independent_tidy_data_set$Activity_Number,
                                 Activity_Name   = activity_labels[semi_second_independent_tidy_data_set$Activity_Number,2])
         
-          second_independent_tidy_data_set <- cbind(second_activity_names,
+          second_independent_tidy_data_set <- cbind(
+                                second_activity_names,
                                 semi_second_independent_tidy_data_set[ , 2:ncol(semi_second_independent_tidy_data_set)])
         
           ```

@@ -317,15 +317,15 @@ Train Data
  3.  Because we aggregated the data on activity numbers and for simplicity did not carry forward the activity names, here we reapply 
  the activity names using the list of activity numbers in the aggregated structure, producing the second_independent_tidy_data_set
          
-  ```{r}
-
-  second_activity_names <- data.frame(Activity_Number = semi_second_independent_tidy_data_set$Activity_Number,
-                                      Activity_Name   = activity_labels[semi_second_independent_tidy_data_set$Activity_Number,2])
-
-  second_independent_tidy_data_set <- cbind(second_activity_names,
-                                          semi_second_independent_tidy_data_set[ , 2:ncol(semi_second_independent_tidy_data_set)])
-
-  ```
+          ```{r}
+        
+          second_activity_names <- data.frame(Activity_Number = semi_second_independent_tidy_data_set$Activity_Number,
+                                Activity_Name   = activity_labels[semi_second_independent_tidy_data_set$Activity_Number,2])
+        
+          second_independent_tidy_data_set <- cbind(second_activity_names,
+                                semi_second_independent_tidy_data_set[ , 2:ncol(semi_second_independent_tidy_data_set)])
+        
+          ```
 
  4. In line with course project Instruction step 4 to use descriptive variable names, here we revise the 
  column names in the second_independent_tidy_data_set for descriptive accuracy by adding the word "Mean" 

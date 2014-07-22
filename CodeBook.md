@@ -90,21 +90,17 @@ Test Analysis Data
 
          Source File            Data Description
         
-         subject_test.txt       Identifier numbers of subjects (people) related to rows 
-                                of test data
+         subject_test.txt       Identifier numbers of subjects (people) related to rows of test data
                                 One row for each row of feature data from x_test.txt
                                 Add to feature data by cbind
          
-         y_test.txt             Identifier numbers of actvities related to rows of test 
-                                data
+         y_test.txt             Identifier numbers of actvities related to rows of test data
                                 One row for each row of feature data from x_test.txt
-                                Add to feature data by cbind
                                 These numbers are used to look up activity names that 
                                 are in the variable called activity_labels which comes 
                                 from activity_labels.txt
          
-         x_test.txt             561-column-wide test data described in Features Summary, 
-                                below 
+         x_test.txt             561-column-wide test data described in Features Summary, below 
                                 These are the data that go in the columns named in 
                                 features.txt, above, and are the results of analysis 
                                 on the observation vectors in the body_ and total_ files 
@@ -130,12 +126,10 @@ Train Data
 
          Source File            Data Description
          
-         subject_train.txt      Identifier numbers of subjects (people) related to rows of 
-                                train data. 
+         subject_train.txt      Identifier numbers of subjects (people) related to rows of train data. 
                                 One row for each row of feature data from x_train.txt
          
-         y_train.txt            Identifier numbers of actvities related to rows of 
-                                train data
+         y_train.txt            Identifier numbers of actvities related to rows of train data
                                 One row for each row of feature data from x_train.txt
                                                                 
          x_train.txt            561-column-wide train data described in features.txt 

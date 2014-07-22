@@ -373,4 +373,42 @@ This resulted in an extract data set having the following characteristics.
         
         Total Row Count                         10,299
         
-        Total dimensions of the intial merge of the data in the .zip file is 10,299 rows and 84 columns.
+        Total dimensions of the extract of means and standard deviations is 10,299 rows and 84 columns.
+        
+Summary of Deliverable
+======================
+
+ Our approach to this takes the domain of data as all-inclusive, as there is no restriction in the instruction. Therefore,
+ for the deliverable, second_independent_tidy_data_set, we began with the data in the merge data set.
+ 
+ Our approach also makes the inferrence that the instruction intends to convey that we strike the mean of each variable 
+ for every unique combination of activity and subject, as the alternative data structure of combining domain-wide means
+ for each activity with separate domain-wide means for each subject into one data set would appear to lack any rational purpose.
+
+ Aggregate() -- We use the aggregate() function to strike the means based on the grouping criteria in our interpretation, 
+ passing activty number and subject to the by argument in a list.
+ 
+ Lastly, rename the columns to reflect that the values are mean averages.
+ 
+ Column Name                             Column Number           Source
+        
+        Activity Number                         1                       y_test/train
+        Activity Name                           2                       activity_labels assigned based on Activity Number
+        Subject Number                          3                       subjects_test/train
+        Means of 561 feature columns            4 - 564                 x_test/train
+        Means of Body Acceleration x-Axis       565 - 692               body_acc_x_test/train
+        Means of Body Acceleration y-Axis       693 - 820               body_acc_y_test/train
+        Means of Body Acceleration z-Axis       821 - 948               body_acc_z_test/train
+        Means of Body Gyroscopic x-Axis         949 - 1076              body_gyro_x_test/train
+        Means of Body Gyroscopic y-Axis         1077 - 1204             body_gyro_y_test/train
+        Means of Body Gyroscopic z-Axis         1205 - 1332             body_gyro_z_test/train
+        Means of Total Acceleration x-Axis      1333 - 1460             total_acc_x_test/train
+        Means of Total Acceleration y-Axis      1461 - 1588             total_acc_y_test/train
+        Means of Total Acceleration z-Axis      1589 - 1716             total_acc_z_test/train
+        
+        The row counts are as follows: 30 subjects and six actvities produce rows for 180 unique combinations
+        of activities and subjects.
+        
+        The total dimensions of the second independent tidy data set of mean variables by activity and subject
+        are 180 rows and 1,716 columns.
+

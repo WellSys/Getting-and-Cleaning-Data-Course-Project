@@ -386,12 +386,21 @@ Summary of Deliverable
  
  Our approach also makes the inferrence that the instruction intends to convey that we strike the mean of each variable 
  for every unique combination of activity and subject, as the alternative data structure of combining domain-wide means
- for each activity with separate domain-wide means for each subject into one data set would appear to lack any rational purpose.
+ for each activity with separate domain-wide means for each subject into one data set would appear to lack any rational 
+ purpose.
 
- Aggregate() -- We use the aggregate() function to strike the means based on the grouping criteria in our interpretation, 
- passing activty number and subject to the by argument in a list.
- 
- Lastly, rename the columns to reflect that the values are mean averages.
+ Aggregate() -- We use the aggregate() function to strike the means based on the grouping criteria in the instructions, 
+ passing activty number and subject to the by argument in a list, and passing 'mean' to the FUN agrument.
+         
+         '''{r}
+         semi_second_independent_tidy_data_set <- aggregate(x = semi_tidy_data_set[, 6:ncol(semi_tidy_data_set)], 
+                                                                by = list(semi_tidy_data_set$Activity_Number, 
+                                                                          semi_tidy_data_set$Subject), 
+                                                                FUN = "mean", 
+                                                                na.rm = T)
+         '''
+
+ Lastly, we rename the columns to reflect that the values are mean averages.
  
  Column Name                             Column Number           Source
         

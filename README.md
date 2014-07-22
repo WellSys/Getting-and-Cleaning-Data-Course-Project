@@ -33,14 +33,14 @@ Data Shared by Test and Train
 --------------------------------------------------------------------------------------------------------------------------
  
 
- Memory Variable         Source File             Data Description
+   Memory Variable         Source File             Data Description
 
- activity_labels         activity_labels.txt     Names of activities, to be looked up based on activity numbers in the y_test.txt file
+   activity_labels         activity_labels.txt     Names of activities, to be looked up based on activity numbers in the y_test.txt file
 
- col_names_561           features.txt            Feature names related to the columns of the x_test data
-                                                 This file lists feature names down its first column, and these names 
-                                                 must be used horizontally across the x_test.txt and x_train.txt data, 
-                                                 below, as column names.
+   col_names_561           features.txt            Feature names related to the columns of the x_test data
+                                                   This file lists feature names down its first column, and these names 
+                                                   must be used horizontally across the x_test.txt and x_train.txt data, 
+                                                   below, as column names.
 
 Test Data 
 --------------------------------------------------------------------------------------------------------------------------

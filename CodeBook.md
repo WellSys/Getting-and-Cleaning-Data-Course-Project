@@ -108,7 +108,9 @@ Test Measurement Data
 ---------------------
         
          The following data are summarized in Measurement Data Summary, below.
-        
+
+         Source File            Data Description
+
          body_acc_x_test.txt    Body acceleration x-axis data related to rows of test data
          body_acc_y_test.txt    Body acceleration y-axis data related to rows of test data
          body_acc_z_test.txt    Body acceleration z-axis data related to rows of test data
@@ -119,8 +121,8 @@ Test Measurement Data
          total_acc_y_test.txt   Total acceleration y-axis data related to rows of test data 
          total_acc_z_test.txt   Total acceleration z-axis data related to rows of test data
 
-Train Data
-----------
+Train Analysis Data
+-------------------
 
          Source File            Data Description
          
@@ -137,10 +139,12 @@ Train Data
                                 files below in Train Measurement Data.
 
 Train Measurement Data
----------------------
+----------------------
 
          The following data are summarized in Measurement Data Summary, below.
-         
+
+         Source File            Data Description
+
          body_acc_x_train.txt   Body acceleration x-axis data related to rows of train data
          body_acc_y_train.txt   Body acceleration y-axis data related to rows of train data
          body_acc_z_train.txt   Body acceleration z-axis data related to rows of train data
@@ -151,6 +155,7 @@ Train Measurement Data
          total_acc_y_train.txt  Total acceleration y-axis data related to rows of train data 
          total_acc_z_train.txt  Total acceleration z-axis data related to rows of train data
          
+
 Measurement Data Summary
 ========================
 

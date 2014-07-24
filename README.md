@@ -246,8 +246,124 @@ Train Data
 3. Where and how we inferred descriptive variable names (Instruction step 4)
 --------------------------------------------------------------------------------------------------------------------------
 
- For feature data column names we use features.txt, as these are as descriptive as possible/necessary given the available 
- information. 
+  Vernacular naming was accomplished by translating names provided in the data using guidance outlined in the code book as to the  *probable* meaning of the name.  Name translations are depicted in the code book Appendix, Feature Names Vernacular Translation for reference. 
+
+        '''{r}
+        old_names_561 <- as.vector(read.table("features.txt")[,2])
+
+        col_names_561 <- as.vector(read.table("features.txt")[,2])
+        
+        # Tidy-up the column names for the 561 feature columns
+        
+        col_names_561 <- gsub("^t", "Time_Domain_" ,col_names_561)
+        
+        col_names_561 <- gsub("^f", "Frequency_Domain_" ,col_names_561)
+        
+        col_names_561 <- gsub("BodyAcc", "Body_Acceleration_" ,col_names_561)
+        
+        col_names_561 <- gsub("GravityAcc", "Gravity_Acceleration_" ,col_names_561)
+        
+        col_names_561 <- gsub("BodyGyro", "Body_Gyroscopic_" ,col_names_561)
+        
+        col_names_561 <- gsub("JerkMag", "Jerk_Magnitude_" ,col_names_561)
+        
+        col_names_561 <- gsub("Mag-", "Magnitude_" ,col_names_561)
+        
+        col_names_561 <- gsub("_mean()", "_Mean_" ,col_names_561)
+        
+        col_names_561 <- gsub("-mean()", "_Mean_" ,col_names_561)
+        
+        col_names_561 <- gsub("-std()", "_Standard_Deviation_" ,col_names_561)
+        
+        col_names_561 <- gsub("_std()", "_Standard_Deviation_" ,col_names_561)
+        
+        col_names_561 <- gsub("-mad()", "_Mean_Absolute_Deviation_" ,col_names_561)
+        
+        col_names_561 <- gsub("_mad()", "_Mean_Absolute_Deviation_" ,col_names_561)
+        
+        col_names_561 <- gsub("-max()", "_Maximum_" ,col_names_561)
+        
+        col_names_561 <- gsub("_max()", "_Maximum_" ,col_names_561)
+        
+        col_names_561 <- gsub("-min()", "_Minimum_" ,col_names_561)
+        
+        col_names_561 <- gsub("_min()", "_Minimum_" ,col_names_561)
+        
+        col_names_561 <- gsub("-sma()", "_Signal_Magnitude_Area_" ,col_names_561)
+        
+        col_names_561 <- gsub("_sma()", "_Signal_Magnitude_Area_" ,col_names_561)
+        
+        col_names_561 <- gsub("-energy()", "_Energy_" ,col_names_561)
+        
+        col_names_561 <- gsub("_energy()", "_Energy_" ,col_names_561)
+        
+        col_names_561 <- gsub("-iqr()", "_Interquartile_Range_" ,col_names_561)
+        
+        col_names_561 <- gsub("_iqr()", "_Interquartile_Range_" ,col_names_561)
+        
+        col_names_561 <- gsub("-entropy()", "_Entropy_" ,col_names_561)
+        
+        col_names_561 <- gsub("_entropy()", "_Entropy_" ,col_names_561)
+        
+        col_names_561 <- gsub("-arCoeff()", "_Autoregression_Coefficient_" ,col_names_561)
+        
+        col_names_561 <- gsub("_arCoeff()", "_Autoregression_Coefficient_" ,col_names_561)
+        
+        col_names_561 <- gsub("-correlation()", "_Correlation_" ,col_names_561)
+        
+        col_names_561 <- gsub("_correlation()", "_Correlation_" ,col_names_561)
+        
+        col_names_561 <- gsub("-skewness()", "_Skewness_" ,col_names_561)
+        
+        col_names_561 <- gsub("_skewness()", "_Skewness_" ,col_names_561)
+        
+        col_names_561 <- gsub("-kurtosis()", "_Kurtosis_" ,col_names_561)
+        
+        col_names_561 <- gsub("_kurtosis()", "_Kurtosis_" ,col_names_561)
+        
+        col_names_561 <- gsub("-bandsEnergy()", "bandsEnergy_" ,col_names_561)
+        
+        col_names_561 <- gsub("_bandsEnergy()", "bandsEnergy_" ,col_names_561)
+        
+        col_names_561 <- gsub("-maxInds()", "_Index_of_Maximum_Frequency_" ,col_names_561)
+        
+        col_names_561 <- gsub("_maxInds()", "_Index_of_Maximum_Frequency_" ,col_names_561)
+        
+        col_names_561 <- gsub("_Maximum_Inds$", "_Index_of_Maximum_Frequency" ,col_names_561)
+        
+        col_names_561 <- gsub("[[:punct:]]", "_", col_names_561)
+        
+        col_names_561 <- gsub("____", "_" ,col_names_561)
+        
+        col_names_561 <- gsub("___", "_" ,col_names_561)
+        
+        col_names_561 <- gsub("__", "_" ,col_names_561)
+        
+        col_names_561 <- gsub("_$", "" ,col_names_561)
+        
+        col_names_561 <- gsub("^angle_tBody_Acceleration_Mean_gravity",                       
+                              "Angle_Between_Time_Dimension_Body_Acceleration_Mean_and_Gravity",col_names_561)
+        
+        col_names_561 <- gsub("^angle_tBody_Acceleration_JerkMean_gravityMean",                       
+                              "Angle_Between_Time_Dimension_Body_Acceleration_Jerk_Mean_and_Gravity_Mean",col_names_561)
+        
+        col_names_561 <- gsub("^angle_tBody_Gyroscopic_Mean_gravityMean",                       
+                              "Angle_Between_Time_Dimension_Body_Gyroscopic_Mean_and_Gravity_Mean",col_names_561)
+        
+        col_names_561 <- gsub("^angle_tBody_Gyroscopic_JerkMean_gravityMean",                       
+                              "Angle_Between_Time_Dimension_Body_Jerk_Mean_and_Gravity_Mean",col_names_561)
+        
+        col_names_561 <- gsub("^angle_X_gravityMean",                       
+                              "Angle_Between_X_Vector_and_Gravity_Mean",col_names_561)
+        
+        col_names_561 <- gsub("^angle_Y_gravityMean",                       
+                              "Angle_Between_Y_Vector_and_Gravity_Mean",col_names_561)
+        
+        col_names_561 <- gsub("^angle_Z_gravityMean",                       
+                              "Angle_Between_Z_Vector_and_Gravity_Mean",col_names_561)
+        '''
+
+
 
  For column names for the windowed measurement data vectors we infer some vernacular names based on the file names, thus:
 

@@ -321,18 +321,18 @@ This resulted in an extract data set, first_tidy_data_set, having the following 
         Time_Domain_Body_Gyroscopic_Jerk_Standard_Deviation_Y	                 34	x_test/train
         Time_Domain_Body_Gyroscopic_Jerk_Standard_Deviation_Z	                 35	x_test/train
         Time_Domain_Body_Acceleration_Magnitude_Mean	                         36	x_test/train
-        Time_Domain_Body_Acceleration_Magnitude_Standard_Deviation	         37	x_test/train
+        Time_Domain_Body_Acceleration_Magnitude_Standard_Deviation               37	x_test/train
         Time_Domain_Gravity_Acceleration_Magnitude_Mean	                         38	x_test/train
         Time_Domain_Gravity_Acceleration_Magnitude_Standard_Deviation	         39	x_test/train
-        Time_Domain_Body_Acceleration_Jerk_Magnitude_Mean	                 40	x_test/train
+        Time_Domain_Body_Acceleration_Jerk_Magnitude_Mean                        40	x_test/train
         Time_Domain_Body_Acceleration_Jerk_Magnitude_Standard_Deviation	         41	x_test/train
-        Time_Domain_Body_Gyroscopic_Magnitude_Mean	                         42	x_test/train
-        Time_Domain_Body_Gyroscopic_Magnitude_Standard_Deviation	         43	x_test/train
+        Time_Domain_Body_Gyroscopic_Magnitude_Mean                               42	x_test/train
+        Time_Domain_Body_Gyroscopic_Magnitude_Standard_Deviation                 43	x_test/train
         Time_Domain_Body_Gyroscopic_Jerk_Magnitude_Mean	                         44	x_test/train
         Time_Domain_Body_Gyroscopic_Jerk_Magnitude_Standard_Deviation	         45	x_test/train
-        Frequency_Domain_Body_Acceleration_Mean_X	                         46	x_test/train
-        Frequency_Domain_Body_Acceleration_Mean_Y	                         47	x_test/train
-        Frequency_Domain_Body_Acceleration_Mean_Z	                         48	x_test/train
+        Frequency_Domain_Body_Acceleration_Mean_X                                46	x_test/train
+        Frequency_Domain_Body_Acceleration_Mean_Y                                47	x_test/train
+        Frequency_Domain_Body_Acceleration_Mean_Z                                48	x_test/train
         Frequency_Domain_Body_Acceleration_Standard_Deviation_X	                 49	x_test/train
         Frequency_Domain_Body_Acceleration_Standard_Deviation_Y	                 50	x_test/train
         Frequency_Domain_Body_Acceleration_Standard_Deviation_Z	                 51	x_test/train
@@ -345,9 +345,9 @@ This resulted in an extract data set, first_tidy_data_set, having the following 
         Frequency_Domain_Body_Acceleration_Jerk_Standard_Deviation_X	         58	x_test/train
         Frequency_Domain_Body_Acceleration_Jerk_Standard_Deviation_Y	         59	x_test/train
         Frequency_Domain_Body_Acceleration_Jerk_Standard_Deviation_Z	         60	x_test/train
-        Frequency_Domain_Body_Acceleration_Jerk_Mean_Freq_X	                 61	x_test/train
-        Frequency_Domain_Body_Acceleration_Jerk_Mean_Freq_Y	                 62	x_test/train
-        Frequency_Domain_Body_Acceleration_Jerk_Mean_Freq_Z	                 63	x_test/train
+        Frequency_Domain_Body_Acceleration_Jerk_Mean_Freq_X                      61	x_test/train
+        Frequency_Domain_Body_Acceleration_Jerk_Mean_Freq_Y                      62	x_test/train
+        Frequency_Domain_Body_Acceleration_Jerk_Mean_Freq_Z                      63	x_test/train
         Frequency_Domain_Body_Gyroscopic_Mean_X	                                 64	x_test/train
         Frequency_Domain_Body_Gyroscopic_Mean_Y	                                 65	x_test/train
         Frequency_Domain_Body_Gyroscopic_Mean_Z	                                 66	x_test/train
@@ -357,16 +357,16 @@ This resulted in an extract data set, first_tidy_data_set, having the following 
         Frequency_Domain_Body_Gyroscopic_Mean_Freq_X	                         70	x_test/train
         Frequency_Domain_Body_Gyroscopic_Mean_Freq_Y	                         71	x_test/train
         Frequency_Domain_Body_Gyroscopic_Mean_Freq_Z	                         72	x_test/train
-        Frequency_Domain_Body_Acceleration_Magnitude_Mean	                 73	x_test/train
+        Frequency_Domain_Body_Acceleration_Magnitude_Mean                        73	x_test/train
         Frequency_Domain_Body_Acceleration_Magnitude_Standard_Deviation	         74	x_test/train
         Frequency_Domain_Body_Acceleration_Magnitude_Mean_Freq	                 75	x_test/train
-        Frequency_Domain_BodyBody_Acceleration_Jerk_Magnitude_Mean	         76	x_test/train
+        Frequency_Domain_BodyBody_Acceleration_Jerk_Magnitude_Mean               76	x_test/train
         Frequency_Domain_BodyBody_Acceleration_Jerk_Magnitude_Standard_Deviation 77	x_test/train
         Frequency_Domain_BodyBody_Acceleration_Jerk_Magnitude_Mean_Freq	         78	x_test/train
-        Frequency_Domain_BodyBody_Gyroscopic_Magnitude_Mean	                 79	x_test/train
-        Frequency_Domain_BodyBody_Gyroscopic_Magnitude_Standard_Deviation	 80	x_test/train
-        Frequency_Domain_BodyBody_Gyroscopic_Magnitude_Mean_Freq	         81	x_test/train
-        Frequency_Domain_BodyBody_Gyroscopic_Jerk_Magnitude_Mean	         82	x_test/train
+        Frequency_Domain_BodyBody_Gyroscopic_Magnitude_Mean                      79	x_test/train
+        Frequency_Domain_BodyBody_Gyroscopic_Magnitude_Standard_Deviation        80	x_test/train
+        Frequency_Domain_BodyBody_Gyroscopic_Magnitude_Mean_Freq                 81	x_test/train
+        Frequency_Domain_BodyBody_Gyroscopic_Jerk_Magnitude_Mean                 82	x_test/train
         Frequency_Domain_BodyBody_Gyroscopic_Jerk_Magnitude_Standard_Deviation	 83	x_test/train
         Frequency_Domain_BodyBody_Gyroscopic_Jerk_Magnitude_Mean_Freq	         84	x_test/train
 

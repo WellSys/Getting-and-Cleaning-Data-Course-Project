@@ -406,91 +406,94 @@ Train Data
         ```
  3. Results: The columns across the resulting data structure are as follows:
 
-        Column Name                             Column Number           Source
-        Observation_Number                      1                       Serial by row
-        Test_or_Train                           2                       Hard coded based on data source
-        Activity_Number	                        3                       y_test/train
-        Activity_Name	                        4                       activity_labels assigned based on Activity Number
-        Subject	                                5                       subjects_test/train
-        tBodyAcc-mean()-X                       6                       x_test/train
-        tBodyAcc-mean()-Y                       7                       x_test/train
-        tBodyAcc-mean()-Z                       8                       x_test/train
-        tBodyAcc-std()-X                        9                       x_test/train
-        tBodyAcc-std()-Y                        10                      x_test/train
-        tBodyAcc-std()-Z                        11                      x_test/train
-        tGravityAcc-mean()-X	                12                      x_test/train
-        tGravityAcc-mean()-Y	                13                      x_test/train
-        tGravityAcc-mean()-Z	                14                      x_test/train
-        tGravityAcc-std()-X                     15                      x_test/train
-        tGravityAcc-std()-Y                     16                      x_test/train
-        tGravityAcc-std()-Z                     17                      x_test/train
-        tBodyAccJerk-mean()-X                   18                      x_test/train
-        tBodyAccJerk-mean()-Y                   19                      x_test/train
-        tBodyAccJerk-mean()-Z                   20                      x_test/train
-        tBodyAccJerk-std()-X	                21                      x_test/train
-        tBodyAccJerk-std()-Y	                22                      x_test/train
-        tBodyAccJerk-std()-Z	                23                      x_test/train
-        tBodyGyro-mean()-X                      24                      x_test/train
-        tBodyGyro-mean()-Y                      25                      x_test/train
-        tBodyGyro-mean()-Z                      26                      x_test/train
-        tBodyGyro-std()-X                       27                      x_test/train
-        tBodyGyro-std()-Y                       28                      x_test/train
-        tBodyGyro-std()-Z                       29                      x_test/train
-        tBodyGyroJerk-mean()-X	                30                      x_test/train
-        tBodyGyroJerk-mean()-Y	                31                      x_test/train
-        tBodyGyroJerk-mean()-Z	                32                      x_test/train
-        tBodyGyroJerk-std()-X	                33                      x_test/train
-        tBodyGyroJerk-std()-Y	                34                      x_test/train
-        tBodyGyroJerk-std()-Z	                35                      x_test/train
-        tBodyAccMag-mean()                      36                      x_test/train
-        tBodyAccMag-std()                       37                      x_test/train
-        tGravityAccMag-mean()	                38                      x_test/train
-        tGravityAccMag-std()	                39                      x_test/train
-        tBodyAccJerkMag-mean()	                40                      x_test/train
-        tBodyAccJerkMag-std()	                41                      x_test/train    
-        tBodyGyroMag-mean()                     42                      x_test/train
-        tBodyGyroMag-std()                      43                      x_test/train
-        tBodyGyroJerkMag-mean()	                44                      x_test/train
-        tBodyGyroJerkMag-std()	                45                      x_test/train
-        fBodyAcc-mean()-X                       46                      x_test/train
-        fBodyAcc-mean()-Y                       47                      x_test/train
-        fBodyAcc-mean()-Z                       48                      x_test/train
-        fBodyAcc-std()-X                        49                      x_test/train
-        fBodyAcc-std()-Y                        50                      x_test/train
-        fBodyAcc-std()-Z                        51                      x_test/train
-        fBodyAcc-meanFreq()-X	                52                      x_test/train
-        fBodyAcc-meanFreq()-Y	                53                      x_test/train
-        fBodyAcc-meanFreq()-Z	                54                      x_test/train
-        fBodyAccJerk-mean()-X	                55                      x_test/train
-        fBodyAccJerk-mean()-Y	                56                      x_test/train
-        fBodyAccJerk-mean()-Z	                57                      x_test/train
-        fBodyAccJerk-std()-X	                58                      x_test/train
-        fBodyAccJerk-std()-Y	                59                      x_test/train
-        fBodyAccJerk-std()-Z	                60                      x_test/train
-        fBodyAccJerk-meanFreq()-X               61                      x_test/train
-        fBodyAccJerk-meanFreq()-Y               62                      x_test/train
-        fBodyAccJerk-meanFreq()-Z               63                      x_test/train
-        fBodyGyro-mean()-X                      64                      x_test/train
-        fBodyGyro-mean()-Y                      65                      x_test/train
-        fBodyGyro-mean()-Z                      66                      x_test/train
-        fBodyGyro-std()-X                       67                      x_test/train
-        fBodyGyro-std()-Y                       68                      x_test/train
-        fBodyGyro-std()-Z                       69                      x_test/train
-        fBodyGyro-meanFreq()-X	                70                      x_test/train
-        fBodyGyro-meanFreq()-Y	                71                      x_test/train
-        fBodyGyro-meanFreq()-Z	                72                      x_test/train
-        fBodyAccMag-mean()                      73                      x_test/train
-        fBodyAccMag-std()                       74                      x_test/train
-        fBodyAccMag-meanFreq()	                75                      x_test/train
-        fBodyBodyAccJerkMag-mean()              76                      x_test/train
-        fBodyBodyAccJerkMag-std()               77                      x_test/train
-        fBodyBodyAccJerkMag-meanFreq()	        78                      x_test/train
-        fBodyBodyGyroMag-mean()	                79                      x_test/train
-        fBodyBodyGyroMag-std()	                80                      x_test/train
-        fBodyBodyGyroMag-meanFreq()             81                      x_test/train
-        fBodyBodyGyroJerkMag-mean()             82                      x_test/train
-        fBodyBodyGyroJerkMag-std()              83                      x_test/train
-        fBodyBodyGyroJerkMag-meanFreq()	        84                      x_test/train
+                                                                        Column 
+        Column Name                                                     Number                Source
+
+        Observation_Number                                                       1	Serial by row
+        Test_or_Train                                                            2	Hard coded based on data source
+        Activity_Number                                                          3	y_test/train
+        Activity_Name	                                                         4	activity_labels 
+        Subject	                                                                 5	subjects_test/train
+        Time_Domain_Body_Acceleration_Mean_X	                                 6	x_test/train
+        Time_Domain_Body_Acceleration_Mean_Y	                                 7	x_test/train
+        Time_Domain_Body_Acceleration_Mean_Z	                                 8	x_test/train
+        Time_Domain_Body_Acceleration_Standard_Deviation_Z                       9	x_test/train
+        Time_Domain_Body_Acceleration_Standard_Deviation_Y                       10	x_test/train
+        Time_Domain_Body_Acceleration_Standard_Deviation_Z                       11	x_test/train
+        Time_Domain_Gravity_Acceleration_Mean_X	                                 12	x_test/train
+        Time_Domain_Gravity_Acceleration_Mean_Y	                                 13	x_test/train
+        Time_Domain_Gravity_Acceleration_Mean_Z	                                 14	x_test/train
+        Time_Domain_Gravity_Acceleration_Standard_Deviation_X	                 15	x_test/train
+        Time_Domain_Gravity_Acceleration_Standard_Deviation_Y	                 16	x_test/train
+        Time_Domain_Gravity_Acceleration_Standard_Deviation_Z	                 17	x_test/train
+        Time_Domain_Body_Acceleration_Jerk_Mean_X                                18	x_test/train
+        Time_Domain_Body_Acceleration_Jerk_Mean_Y                                19	x_test/train
+        Time_Domain_Body_Acceleration_Jerk_Mean_Z                                20	x_test/train
+        Time_Domain_Body_Acceleration_Jerk_Standard_Deviation_X	                 21	x_test/train
+        Time_Domain_Body_Acceleration_Jerk_Standard_Deviation_Y	                 22	x_test/train
+        Time_Domain_Body_Acceleration_Jerk_Standard_Deviation_Z	                 23	x_test/train
+        Time_Domain_Body_Gyroscopic_Mean_X                                       24	x_test/train
+        Time_Domain_Body_Gyroscopic_Mean_Y                                       25	x_test/train
+        Time_Domain_Body_Gyroscopic_Mean_Z                                       26	x_test/train
+        Time_Domain_Body_Gyroscopic_Standard_Deviation_X                         27	x_test/train
+        Time_Domain_Body_Gyroscopic_Standard_Deviation_Y                         28	x_test/train
+        Time_Domain_Body_Gyroscopic_Standard_Deviation_Z                         29	x_test/train
+        Time_Domain_Body_Gyroscopic_Jerk_Mean_X	                                 30	x_test/train
+        Time_Domain_Body_Gyroscopic_Jerk_Mean_Y	                                 31	x_test/train
+        Time_Domain_Body_Gyroscopic_Jerk_Mean_Z	                                 32	x_test/train
+        Time_Domain_Body_Gyroscopic_Jerk_Standard_Deviation_X	                 33	x_test/train
+        Time_Domain_Body_Gyroscopic_Jerk_Standard_Deviation_Y	                 34	x_test/train
+        Time_Domain_Body_Gyroscopic_Jerk_Standard_Deviation_Z	                 35	x_test/train
+        Time_Domain_Body_Acceleration_Magnitude_Mean	                         36	x_test/train
+        Time_Domain_Body_Acceleration_Magnitude_Standard_Deviation               37	x_test/train
+        Time_Domain_Gravity_Acceleration_Magnitude_Mean	                         38	x_test/train
+        Time_Domain_Gravity_Acceleration_Magnitude_Standard_Deviation	         39	x_test/train
+        Time_Domain_Body_Acceleration_Jerk_Magnitude_Mean                        40	x_test/train
+        Time_Domain_Body_Acceleration_Jerk_Magnitude_Standard_Deviation	         41	x_test/train
+        Time_Domain_Body_Gyroscopic_Magnitude_Mean                               42	x_test/train
+        Time_Domain_Body_Gyroscopic_Magnitude_Standard_Deviation                 43	x_test/train
+        Time_Domain_Body_Gyroscopic_Jerk_Magnitude_Mean	                         44	x_test/train
+        Time_Domain_Body_Gyroscopic_Jerk_Magnitude_Standard_Deviation	         45	x_test/train
+        Frequency_Domain_Body_Acceleration_Mean_X                                46	x_test/train
+        Frequency_Domain_Body_Acceleration_Mean_Y                                47	x_test/train
+        Frequency_Domain_Body_Acceleration_Mean_Z                                48	x_test/train
+        Frequency_Domain_Body_Acceleration_Standard_Deviation_X	                 49	x_test/train
+        Frequency_Domain_Body_Acceleration_Standard_Deviation_Y	                 50	x_test/train
+        Frequency_Domain_Body_Acceleration_Standard_Deviation_Z	                 51	x_test/train
+        Frequency_Domain_Body_Acceleration_Mean_Freq_X	                         52	x_test/train
+        Frequency_Domain_Body_Acceleration_Mean_Freq_Y	                         53	x_test/train
+        Frequency_Domain_Body_Acceleration_Mean_Freq_Z	                         54	x_test/train
+        Frequency_Domain_Body_Acceleration_Jerk_Mean_X	                         55	x_test/train
+        Frequency_Domain_Body_Acceleration_Jerk_Mean_Y	                         56	x_test/train
+        Frequency_Domain_Body_Acceleration_Jerk_Mean_Z	                         57	x_test/train
+        Frequency_Domain_Body_Acceleration_Jerk_Standard_Deviation_X	         58	x_test/train
+        Frequency_Domain_Body_Acceleration_Jerk_Standard_Deviation_Y	         59	x_test/train
+        Frequency_Domain_Body_Acceleration_Jerk_Standard_Deviation_Z	         60	x_test/train
+        Frequency_Domain_Body_Acceleration_Jerk_Mean_Freq_X                      61	x_test/train
+        Frequency_Domain_Body_Acceleration_Jerk_Mean_Freq_Y                      62	x_test/train
+        Frequency_Domain_Body_Acceleration_Jerk_Mean_Freq_Z                      63	x_test/train
+        Frequency_Domain_Body_Gyroscopic_Mean_X	                                 64	x_test/train
+        Frequency_Domain_Body_Gyroscopic_Mean_Y	                                 65	x_test/train
+        Frequency_Domain_Body_Gyroscopic_Mean_Z	                                 66	x_test/train
+        Frequency_Domain_Body_Gyroscopic_Standard_Deviation_X	                 67	x_test/train
+        Frequency_Domain_Body_Gyroscopic_Standard_Deviation_Y	                 68	x_test/train
+        Frequency_Domain_Body_Gyroscopic_Standard_Deviation_Z	                 69	x_test/train
+        Frequency_Domain_Body_Gyroscopic_Mean_Freq_X	                         70	x_test/train
+        Frequency_Domain_Body_Gyroscopic_Mean_Freq_Y	                         71	x_test/train
+        Frequency_Domain_Body_Gyroscopic_Mean_Freq_Z	                         72	x_test/train
+        Frequency_Domain_Body_Acceleration_Magnitude_Mean                        73	x_test/train
+        Frequency_Domain_Body_Acceleration_Magnitude_Standard_Deviation	         74	x_test/train
+        Frequency_Domain_Body_Acceleration_Magnitude_Mean_Freq	                 75	x_test/train
+        Frequency_Domain_BodyBody_Acceleration_Jerk_Magnitude_Mean               76	x_test/train
+        Frequency_Domain_BodyBody_Acceleration_Jerk_Magnitude_Standard_Deviation 77	x_test/train
+        Frequency_Domain_BodyBody_Acceleration_Jerk_Magnitude_Mean_Freq	         78	x_test/train
+        Frequency_Domain_BodyBody_Gyroscopic_Magnitude_Mean                      79	x_test/train
+        Frequency_Domain_BodyBody_Gyroscopic_Magnitude_Standard_Deviation        80	x_test/train
+        Frequency_Domain_BodyBody_Gyroscopic_Magnitude_Mean_Freq                 81	x_test/train
+        Frequency_Domain_BodyBody_Gyroscopic_Jerk_Magnitude_Mean                 82	x_test/train
+        Frequency_Domain_BodyBody_Gyroscopic_Jerk_Magnitude_Standard_Deviation	 83	x_test/train
+        Frequency_Domain_BodyBody_Gyroscopic_Jerk_Magnitude_Mean_Freq	         84	x_test/train
+
         
         The row counts are as follows:
         
@@ -502,8 +505,8 @@ Train Data
         Total Row Count                         10,299
         
         Total dimensions of the extract of means and standard deviations is 10,299 rows and 84 columns.
-
- This data structure is in first_tidy_data_set in run_analsyis.R, and run_analysis.R writes first_tidy_data_set.txt to disc.
+        
+This data structure is in first_tidy_data_set in run_analsyis.R, and run_analysis.R writes first_tidy_data_set.txt to disc.
 
 5. How we created a second, independent tidy data set with the average of each variable for each activity and each subject.  (Instruction step 5)
 --------------------------------------------------------------------------------------------------------------------------

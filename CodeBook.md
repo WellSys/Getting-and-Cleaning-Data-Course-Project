@@ -439,7 +439,7 @@ Feature Names Vernacular Translation
 ------------------------------------
 
              Column Names Provided                       Vernacular Names                                                                     
-                1 tBodyAcc-mean()-X                    Time_Domain_Body_Acceleration_Mean_X                                            
+              1 tBodyAcc-mean()-X                    Time_Domain_Body_Acceleration_Mean_X                                            
         	  2 tBodyAcc-mean()-Y                    Time_Domain_Body_Acceleration_Mean_Y                                            
         	  3 tBodyAcc-mean()-Z                    Time_Domain_Body_Acceleration_Mean_Z                                            
         	  4 tBodyAcc-std()-X                     Time_Domain_Body_Acceleration_Standard_Deviation_X                              

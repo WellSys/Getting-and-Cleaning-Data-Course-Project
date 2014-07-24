@@ -89,9 +89,9 @@ col_names_561 <- gsub("-kurtosis()", "_Kurtosis_" ,col_names_561)
 
 col_names_561 <- gsub("_kurtosis()", "_Kurtosis_" ,col_names_561)
 
-col_names_561 <- gsub("-bandsEnergy()", "bandsEnergy_" ,col_names_561)
+col_names_561 <- gsub("-bandsEnergy()", "_bandsEnergy_" ,col_names_561)
 
-col_names_561 <- gsub("_bandsEnergy()", "bandsEnergy_" ,col_names_561)
+col_names_561 <- gsub("_bandsEnergy()", "_bandsEnergy_" ,col_names_561)
 
 col_names_561 <- gsub("-maxInds()", "_Index_of_Maximum_Frequency_" ,col_names_561)
 

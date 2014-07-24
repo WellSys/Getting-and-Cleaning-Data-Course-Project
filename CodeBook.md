@@ -293,27 +293,27 @@ This resulted in an extract data set, first_tidy_data_set, having the following 
         Time_Domain_Body_Acceleration_Mean_X	                                 6	x_test/train
         Time_Domain_Body_Acceleration_Mean_Y	                                 7	x_test/train
         Time_Domain_Body_Acceleration_Mean_Z	                                 8	x_test/train
-        Time_Domain_Body_Acceleration_Standard_Deviation_X	                 9	x_test/train
-        Time_Domain_Body_Acceleration_Standard_Deviation_Y	                 10	x_test/train
-        Time_Domain_Body_Acceleration_Standard_Deviation_Z	                 11	x_test/train
+        Time_Domain_Body_Acceleration_Standard_Deviation_Z                       9	x_test/train
+        Time_Domain_Body_Acceleration_Standard_Deviation_Y                       10	x_test/train
+        Time_Domain_Body_Acceleration_Standard_Deviation_Z                       11	x_test/train
         Time_Domain_Gravity_Acceleration_Mean_X	                                 12	x_test/train
         Time_Domain_Gravity_Acceleration_Mean_Y	                                 13	x_test/train
         Time_Domain_Gravity_Acceleration_Mean_Z	                                 14	x_test/train
         Time_Domain_Gravity_Acceleration_Standard_Deviation_X	                 15	x_test/train
         Time_Domain_Gravity_Acceleration_Standard_Deviation_Y	                 16	x_test/train
         Time_Domain_Gravity_Acceleration_Standard_Deviation_Z	                 17	x_test/train
-        Time_Domain_Body_Acceleration_Jerk_Mean_X	                         18	x_test/train
-        Time_Domain_Body_Acceleration_Jerk_Mean_Y	                         19	x_test/train
-        Time_Domain_Body_Acceleration_Jerk_Mean_Z	                         20	x_test/train
+        Time_Domain_Body_Acceleration_Jerk_Mean_X                                18	x_test/train
+        Time_Domain_Body_Acceleration_Jerk_Mean_Y                                19	x_test/train
+        Time_Domain_Body_Acceleration_Jerk_Mean_Z                                20	x_test/train
         Time_Domain_Body_Acceleration_Jerk_Standard_Deviation_X	                 21	x_test/train
         Time_Domain_Body_Acceleration_Jerk_Standard_Deviation_Y	                 22	x_test/train
         Time_Domain_Body_Acceleration_Jerk_Standard_Deviation_Z	                 23	x_test/train
-        Time_Domain_Body_Gyroscopic_Mean_X	                                 24	x_test/train
-        Time_Domain_Body_Gyroscopic_Mean_Y	                                 25	x_test/train
-        Time_Domain_Body_Gyroscopic_Mean_Z	                                 26	x_test/train
-        Time_Domain_Body_Gyroscopic_Standard_Deviation_X	                 27	x_test/train
-        Time_Domain_Body_Gyroscopic_Standard_Deviation_Y	                 28	x_test/train
-        Time_Domain_Body_Gyroscopic_Standard_Deviation_Z	                 29	x_test/train
+        Time_Domain_Body_Gyroscopic_Mean_X                                       24	x_test/train
+        Time_Domain_Body_Gyroscopic_Mean_Y                                       25	x_test/train
+        Time_Domain_Body_Gyroscopic_Mean_Z                                       26	x_test/train
+        Time_Domain_Body_Gyroscopic_Standard_Deviation_X                         27	x_test/train
+        Time_Domain_Body_Gyroscopic_Standard_Deviation_Y                         28	x_test/train
+        Time_Domain_Body_Gyroscopic_Standard_Deviation_Z                         29	x_test/train
         Time_Domain_Body_Gyroscopic_Jerk_Mean_X	                                 30	x_test/train
         Time_Domain_Body_Gyroscopic_Jerk_Mean_Y	                                 31	x_test/train
         Time_Domain_Body_Gyroscopic_Jerk_Mean_Z	                                 32	x_test/train

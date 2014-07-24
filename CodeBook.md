@@ -282,8 +282,8 @@ For the creation of our extract of columns containing means and standard deviati
 
 This resulted in an extract data set, first_tidy_data_set, having the following characteristics.
 
-                                                                                Column 
-        Column Name                                                             Number	Source
+                                                                        Column 
+        Column Name                                                     Number	        Source
 
         Observation_Number                                                       1	Serial by row
         Test_or_Train                                                            2	Hard coded based on data source

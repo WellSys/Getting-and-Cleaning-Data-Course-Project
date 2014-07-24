@@ -387,16 +387,16 @@ Train Data
  2. We then subsetted the merged data set using this vector as the select argument to produce the first tidy data set.
 
         ```{r}
-        extracts <- names(semi_tidy_data_set)[1:5]
-        extracts_index <- 5
         for (i in 1:ncol(semi_tidy_data_set)){
                        
-                if (regexpr("std", names(semi_tidy_data_set)[i]) > 0){
+                if (regexpr("Standard_Deviation", names(semi_tidy_data_set)[i]) > 0){
                         extracts_index <- extracts_index + 1
                         extracts[extracts_index] <- names(semi_tidy_data_set[i])
                 }
                 
-                if (regexpr("mean", names(semi_tidy_data_set)[i]) > 0){
+                if ((regexpr("Mean",          names(semi_tidy_data_set)[i]) > 0) &
+                    (regexpr("Absolute",      names(semi_tidy_data_set)[i]) < 0) &
+                     regexpr("Angle_Between", names(semi_tidy_data_set)[i]) < 0)  {
                         extracts_index <- extracts_index + 1
                         extracts[extracts_index] <- names(semi_tidy_data_set[i])
                 }    

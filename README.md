@@ -381,8 +381,8 @@ Train Data
 
  1. To select columns for the extract we built a vector, extracts, to use as a select argument with the subset() function, 
   by iterating across the column names of the merged data frame, semi_tidy_data_set, using regular expressions to look for 
-  "mean" or "std" in the column name. Where we found "mean" or "std" in the column name, the column name was appended to 
-  the extracts vector. 
+  "Mean" or "Standard_Deviation" in the column name. Where we found "Mean" or "Standard_Deviation" in the column name, the
+  column name was appended to the extracts vector. 
 
  2. We then subsetted the merged data set using this vector as the select argument to produce the first tidy data set.
 

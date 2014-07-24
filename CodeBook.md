@@ -435,7 +435,7 @@ Summary of Deliverable
 Appendix
 ========
 
-Feature Names Vernacular Translation
+Feature Names Vernacular Translation 
 ------------------------------------
 
              Column Names Provided                       Vernacular Names                                                                     

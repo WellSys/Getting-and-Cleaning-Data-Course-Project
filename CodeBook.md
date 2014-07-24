@@ -285,9 +285,9 @@ This resulted in an extract data set, first_tidy_data_set, having the following 
                                                                                  Column 
         Column Name                                                              Number	Source
 
-        Observation_Number	                                                 1	Serial by row
-        Test_or_Train	                                                         2	Hard coded based on data source
-        Activity_Number	                                                         3	y_test/train
+        Observation_Number                                                       1	Serial by row
+        Test_or_Train                                                            2	Hard coded based on data source
+        Activity_Number                                                          3	y_test/train
         Activity_Name	                                                         4	activity_labels 
         Subject	                                                                 5	subjects_test/train
         Time_Domain_Body_Acceleration_Mean_X	                                 6	x_test/train
